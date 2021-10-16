@@ -20,7 +20,7 @@ DEVICE_PATH := device/samsung/a51
 TARGET_OTA_ASSERT_DEVICE := a51nsxx,a51xx,a51
 
 # Kernel
-TARGET_KERNEL_CONFIG := pŕisma_a51_defconfig
+TARGET_KERNEL_CONFIG := prisma_a51_defconfig
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE     := 61865984
