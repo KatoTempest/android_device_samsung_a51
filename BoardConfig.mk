@@ -14,16 +14,23 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/starlte
+DEVICE_PATH := device/samsung/a51
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := starltexx,starlteks,starlte
+TARGET_OTA_ASSERT_DEVICE := a51nsxx,a51xx,a51
 
 # Kernel
-TARGET_KERNEL_CONFIG := exynos9810-starlte_defconfig
+TARGET_KERNEL_CONFIG := pŕisma_a51_defconfig
 
 # Partitions
-BOARD_SYSTEMIMAGE_PARTITION_SIZE   := 4561305600
+BOARD_BOOTIMAGE_PARTITION_SIZE     := 61865984
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 71106560
+BOARD_CACHEIMAGE_PARTITION_SIZE    := 209715200
+BOARD_DTBOIMG_PARTITION_SIZE       := 8388608
+ifneq ($(WITH_GMS),true)
+BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 1887436800
+endif
+
 
 # Inherit common board flags
-include device/samsung/universal9810-common/BoardConfigCommon.mk
+include device/samsung/universal9611-common/BoardConfigCommon.mk

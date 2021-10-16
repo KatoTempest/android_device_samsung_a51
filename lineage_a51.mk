@@ -27,22 +27,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := starlte
-PRODUCT_NAME := lineage_starlte
+PRODUCT_DEVICE := a51
+PRODUCT_NAME := lineage_a51
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-G960F
+PRODUCT_MODEL := SM-A515F
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
-BUILD_FINGERPRINT := samsung/starltexx/starlte:10/QP1A.190711.020/G960FXXUCFTK1:user/release-keys
+BUILD_FINGERPRINT := samsung/a51nsxx/a51:11/RP1A.190711.020/A515FXXU5EG2:user/release-keys
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=starltexx \
-    PRIVATE_BUILD_DESC="starltexx-user 10 QP1A.190711.020 G960FXXUCFTK1 release-keys"
+    PRODUCT_NAME=a51nsxx \
+    PRIVATE_BUILD_DESC="a51nsxx-user 11 RP1A.190711.020 A515FXXU5EG2 release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.PDA=G960FXXUCFTK1
+    ro.build.PDA=A515FXXU5EG2
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    lineage.updater.uri=https://raw.githubusercontent.com/Geoknyda/OTA/lineage-18.1/starlte.json
+
