@@ -16,8 +16,20 @@
 
 DEVICE_PATH := device/samsung/a51
 
+# APEX image
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := a51nsxx,a51xx,a51
+
+# Display
+TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x2000U | 0x400000000LL
+
+# FOD
+TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.a51
+
+# Display
+TARGET_SCREEN_DENSITY := 420
 
 # Kernel
 TARGET_KERNEL_CONFIG := prisma_a51_defconfig
@@ -31,6 +43,21 @@ ifneq ($(WITH_GMS),true)
 BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 1887436800
 endif
 
+TARGET_COPY_OUT_ODM := odm
+TARGET_COPY_OUT_PRODUCT := system/product
+
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.exynos9611
+
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
+
+# SELinux
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+
 
 # Inherit common board flags
 include device/samsung/universal9611-common/BoardConfigCommon.mk
+
+
+
