@@ -36,8 +36,8 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := a51
 PRODUCT_NAME := nad_a51
+PRODUCT_DEVICE := a51
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-A515F
 PRODUCT_MANUFACTURER := samsung
