@@ -14,21 +14,30 @@
 # limitations under the License.
 #
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
+# Inherit common products
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
-
-# Inherit device configuration
-$(call inherit-product, device/samsung/a51/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit device configurations
+$(call inherit-product, device/samsung/a51/device.mk)
+
+# Inherit common Nusantara configurations
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+
+
+# GApps
+TARGET_USES_BLUR := true
+
+# Pixel Charging
+USE_PIXEL_CHARGING := true
+
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := a51
-PRODUCT_NAME := lineage_a51
+PRODUCT_NAME := nad_a51
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-A515F
 PRODUCT_MANUFACTURER := samsung

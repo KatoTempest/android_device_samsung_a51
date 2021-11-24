@@ -1,0 +1,20 @@
+[
+    {
+        "repository": "KatoTempest/android_device_samsung_universal9611-common",
+        "target_path": "device/samsung/universal9611-common",
+        "remote": "github",
+        "revision": "nusantara-11"
+    },
+  {
+    "remote":"github",
+    "repository":"KatoTempest/proprietary_vendor_samsung",
+    "target_path":"vendor/samsung/a51",
+    "branch":"11"
+  },
+  {
+    "remote":"github",
+    "repository":"KatoTempest/PrismaKernel_9611",
+    "target_path":"kernel/samsung/a51",
+    "branch":"stable"
+  }
+]

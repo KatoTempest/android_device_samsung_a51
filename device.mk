@@ -24,3 +24,21 @@ $(call inherit-product, device/samsung/universal9611-common/universal9611-common
 
 # Inherit device vendor
 $(call inherit-product-if-exists, vendor/samsung/a51/a51-vendor.mk)
+
+# Device uses high-density artwork where available
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
+# Shipping level
+PRODUCT_SHIPPING_API_LEVEL := 30
+
+# Dynamic partitions setup
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# Atrace
+PRODUCT_PACKAGES += \
+    android.hardware.atrace@1.0-service
+
+# ANT+
+PRODUCT_PACKAGES += \
+    AntHalService-Soong
