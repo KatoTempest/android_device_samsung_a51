@@ -1,5 +1,5 @@
-service fingerprint-inscreen-1-0 /system/bin/hw/lineage.biometrics.fingerprint.inscreen@1.0-service.a51
-    interface vendor.lineage.biometrics.fingerprint.inscreen@1.0::IFingerprintInscreen default
+service fingerprint-inscreen-1-0 /system/bin/hw/android.biometrics.fingerprint.inscreen@1.0-service.a51
+    interface vendor.android.biometrics.fingerprint.inscreen@1.0::IFingerprintInscreen default
     class hal
     user system
     group system

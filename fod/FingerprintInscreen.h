@@ -16,11 +16,11 @@
 #ifndef VENDOR_LINEAGE_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_FINGERPRINTINSCREEN_H
 #define VENDOR_LINEAGE_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_FINGERPRINTINSCREEN_H
 
-#include <vendor/lineage/biometrics/fingerprint/inscreen/1.0/IFingerprintInscreen.h>
+#include <vendor/android/biometrics/fingerprint/inscreen/1.0/IFingerprintInscreen.h>
 #include <vendor/samsung/hardware/biometrics/fingerprint/3.0/ISehBiometricsFingerprint.h>
 
 namespace vendor {
-namespace lineage {
+namespace android {
 namespace biometrics {
 namespace fingerprint {
 namespace inscreen {

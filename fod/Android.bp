@@ -16,9 +16,9 @@
 cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
-    name: "lineage.biometrics.fingerprint.inscreen@1.0-service.a51",
-    vintf_fragments: ["lineage.biometrics.fingerprint.inscreen@1.0-service.a51.xml"],
-    init_rc: ["lineage.biometrics.fingerprint.inscreen@1.0-service.a51.rc"],
+    name: "android.biometrics.fingerprint.inscreen@1.0-service.a51",
+    vintf_fragments: ["android.biometrics.fingerprint.inscreen@1.0-service.a51.xml"],
+    init_rc: ["android.biometrics.fingerprint.inscreen@1.0-service.a51.rc"],
     srcs: ["service.cpp", "FingerprintInscreen.cpp"],
     shared_libs: [
         "libbase",
@@ -28,7 +28,7 @@ cc_binary {
         "liblog",
         "libhwbinder",
         "libutils",
-        "vendor.lineage.biometrics.fingerprint.inscreen@1.0",
+        "vendor.android.biometrics.fingerprint.inscreen@1.0",
         "android.hardware.biometrics.fingerprint@2.1",
         "vendor.samsung.hardware.biometrics.fingerprint@3.0",
     ],
