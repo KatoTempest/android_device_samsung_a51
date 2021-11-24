@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_a51.mk
+    $(LOCAL_DIR)/nad_a51.mk
 
 COMMON_LUNCH_CHOICES := \
      nad_a51-userdebug \
