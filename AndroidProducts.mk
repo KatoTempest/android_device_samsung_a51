@@ -18,6 +18,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_a51.mk
 
 COMMON_LUNCH_CHOICES := \
-     lineage_a51-userdebug \
-     lineage_a51-eng \
-     lineage_a51-user
+     nad_a51-userdebug \
+     nad_a51-eng \
+     nad_a51-user
