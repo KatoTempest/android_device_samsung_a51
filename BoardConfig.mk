@@ -33,8 +33,12 @@ TARGET_SCREEN_DENSITY := 420
 
 # Kernel
 BOARD_BOOT_HEADER_NAME       := SRPSG30B003KU
-TARGET_KERNEL_CONFIG := exynos9610-a51xx_defconfig
-BOARD_DTBO_CFG := $(DEVICE_PATH)/kernel/a51.cfg
+#TARGET_KERNEL_CONFIG := prisma_a51_defconfig
+BOARD_PREBUILT_DTBOIMAGE := (pwd)/prebuilt/dtbo.img
+TARGET_PREBUILT_KERNEL := (pwd)/prebuilt/Image
+#TARGET_KERNEL_CLANG_VERSION := clang-4639204
+#TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-4639204
+#BOARD_DTBO_CFG := $(DEVICE_PATH)/kernel/a51.cfg
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE     := 61865984
