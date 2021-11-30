@@ -33,7 +33,7 @@ TARGET_SCREEN_DENSITY := 420
 
 # Kernel
 BOARD_BOOT_HEADER_NAME       := SRPSG30B003KU
-TARGET_KERNEL_CONFIG := prisma_a51_defconfig
+TARGET_KERNEL_CONFIG := exynos9610-a51xx_defconfig
 BOARD_DTBO_CFG := $(DEVICE_PATH)/kernel/a51.cfg
 
 # Partitions
